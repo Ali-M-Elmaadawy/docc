@@ -12,11 +12,4 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./laravel-app:/var/www/html
-  db:
-    image: mysql:5.7
-    environment:
-      MYSQL_ROOT_PASSWORD: root_password
-      MYSQL_DATABASE: laravel_db
-    volumes:
-      - ./mysql-data:/var/lib/mysql
+      - ./docc:/var/www/html
